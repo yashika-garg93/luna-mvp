@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 # Load API key
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('models/gemini-2.5-pro')
 
 st.set_page_config(page_title="Luna – Your PCOS Companion")
 st.title("🌙 Luna – Your PCOS Companion")
